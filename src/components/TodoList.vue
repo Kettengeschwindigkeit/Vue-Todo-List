@@ -1,6 +1,7 @@
 <template>
   <div>
     <ul>
+      {{ todos }}
       <TodoItem />
     </ul>
   </div>
@@ -9,6 +10,7 @@
 <script>
   import TodoItem from '@/components/TodoItem.vue'
   export default {
+    props: ['todos'],
     components: {
       TodoItem
     }
